@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      function myFunction() {
+        const navigationBar = document.getElementById("navigation-bar");
+        if (navigationBar.className === "navigation-bar") {
+          navigationBar.className += " responsive";
+        } else {
+          navigationBar.className = "navigation-bar";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Hedy Lamarr</h1>
+      <p>1914 - 2000</p>
+    </header>
+    <nav id="navigation-bar" class="navigation-bar">
+      <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="#">Piano</a></li>
+        <li><a href="#">Pagina 3</a></li>
+        <li class="menu__hamburger-icon">
+          <a href="javascript:void(0);" onclick="myFunction()">
+            <i class="lni lni-menu"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="main-content-container">
+      <aside id="links-sidebar">
+        <h2>Otros sitios</h2>
+        <ul>
+          <li><a href="#">-Primera página</a></li>
+          <li><a href="#">-Segunda página</a></li>
+          <li><a href="#">-Tercera página</a></li>
+        </ul>
+      </aside>
+      <section id="main-content">
+        <img
+          src="lamarr.png"
+          alt="Hedy Lamarr"
+          class="main-content__img--full-width"
+        />
+
+        <h2>Biografía</h2>
+        <p>
+          Hedy Lamarr nació en Viena el 9 de noviembre de 1914 como Hedwig Eva
+          Maria Kiesler. Fue la única hija de un banquero de Lemberg y una
+          pianista de Budapest que, aún siendo de origen judío, se habían criado
+          en el catolicismo. En el colegio, destacó por su brillantez
+          intelectual siendo considerada por sus profesores como superdotada.
+        </p>
+        <p>
+          Compleja e inquieta, abandonó los estudios de ingeniería, decidida a
+          cumplir el sueño de ser actriz. Su descubridor, el empresario y
+          director de teatro y cine Max Reinhardt, la llevó a Berlín para que se
+          formase en interpretación, tras lo cual, regresaron a Viena para
+          empezar a trabajar en la industria del cine.
+        </p>
+
+        <p>
+          La película que la llevó al estrellato en 1932, no pudo ser más
+          polémica. Éxtasis, filmada en Checoslovaquia bajo la dirección de
+          Gustav Machaty, fue el primer film en mostrar el rostro de una actriz,
+          completamente desnuda. Fue tachado de escándalo sexual y se prohibió
+          su proyección en las salas de cine. Le llovieron censuras y condenas,
+          incluida la del Vaticano. Fritz Mandl, magnate de la empresa
+          armamentística, quedó embelesado de la belleza de la joven y solicitó
+          permiso a su padre para cortejarla. Los padres reyeron que siendo este
+          bastante mayor que Hedwig, la pondría en vereda devolviéndola al buen
+          camino. Ignoraron la voluntad de la muchacha, que deseaba seguir
+          adelante con su carrera artística. La obligaron a casarse con Firtz
+          condenándola a una temporada en el infierno.
+        </p>
+
+        <p>
+          Hedwig se vio forzada a transformarse en lo que siempre había
+          detestado, en el trofeo de exhibición de un tirano. Fastidiada del
+          vacio insoportable en el que se había convertido su vida, retomó la
+          carrera de ingeniería. En las reuniones de trabajo de Mandl a las que
+          se le forzó a asistir, aprovechó para aprender y recopilar información
+          sobre las características de la última tecnología armamentística nazi.
+          Su marido era uno de los hombres más influyentes de Europa y antes de
+          la Segunda Guerra Mundial, se dedicó a surtir el arsenal de Hitler y
+          Mussolini. Por ello, fue considerado como ario honorario por los
+          gobiernos fascistas pese a ser de origen judío.
+        </p>
+
+        <p>
+          La vigilancia continua llegó a resultarle tan insoportable que decidió
+          huir. Sólo cogió las joyas para conseguir el dinero que le permitiese
+          alejarse de allí. logró llegar a Londres y embarcarse en el
+          trasatlántico Normandie con destino a Estados Unidos. Allí coincidió
+          con un viajero muy especial, el productor de películas Louis B. Mayer
+          que le ofreció trabajo antes de llegar a puerto. La única petición era
+          que se cambiase el nombre para que no se la relacionase con la
+          película Éxtasis. De los nombres que le eligieron se quedó con el de
+          Hedy Lamarr.
+        </p>
+
+        <p>
+          En 1941 medio mundo estaba en guerra y el otro medio estaba a punto de
+          entrar en ella. Con el nuevo planteamiento estratégico de la
+          Blitzkrieg (guerra relámpago) basado en el empleo masivo y coordinado
+          de la aviación como artillería volante y las unidades acorazadas como
+          caballería mecanizada, los ejércitos alemanes habían barrido las
+          fuerzas polacas y francesas de forma rotunda y tremendamente rápida.
+        </p>
+
+        <p>
+          Hedy conocía de cerca las prácticas de gobierno de Hitler y alimentaba
+          un profundo rencor hacia los nazis, por lo que decidió aportar su
+          contribución personal al esfuerzo de guerra de los aliados. En primer
+          lugar ofreció su trabajo y su preparación como ingeniera al
+          recientemente creado National Inventors Council pero su oferta fue
+          amablemente rechazada por las autoridades
+        </p>
+
+        <p>
+          El área de las comunicaciones era especialmente crítica en una guerra
+          de movimiento y la radio resultaba el medio de comunicación más
+          adecuado. Por otra parte, también se estaban experimentando sistemas
+          de guiado de armas por control remoto mediante señales de radio. Y el
+          uso de estas señales radioeléctricas presentaba dos problemas
+          fundamentales:
+        </p>
+        <ul>
+          <li>
+            En primer lugar, las transmisiones eran absolutamente vulnerables.
+            Debido a la duración de los mensajes, el enemigo podía realizar un
+            barrido de frecuencia en diferentes bandas y tener tiempo de
+            localizar la emisión. Una vez hallada, era fácil determinar el lugar
+            de origen sintonizando, a la misma longitud de onda, dos o más
+            receptores con antenas direccionales, situándolos en diferentes
+            emplazamientos y localizando la emisora por triangulación.
+            Conseguido esto, podían generarse interferencias que impidiesen la
+            recepción, o atacar directamente el transmisor según conviniese.
+          </li>
+          <br>
+          <li>
+            El segundo aspecto negativo era la propia inseguridad en la
+            recepción de la señal de radio, no solo por las interferencias
+            intencionadas que ya se han apuntado, sino por la afectación de la
+            propagación de las ondas debida a causas meramente naturales, como
+            accidentes geográficos, meteorología, reflexiones en la alta
+            atmósfera, etc.
+          </li>
+        </ul>
+
+        <p>
+          El sistema concebido por Hedy partía de una idea tan simple como
+          eficaz. Se trataba de transmitir los mensajes u órdenes de mando
+          fraccionándolos en pequeñas partes, cada una de las cuales se
+          transmitiría secuencialmente cambiando de frecuencia cada vez,
+          siguiendo un patrón pseudoaleatorio. De este modo, los tiempos de
+          transmisión en cada frecuencia eran tan cortos y además estaban
+          espaciados de forma tan irregular, que era prácticamente imposible
+          recomponer el mensaje si no se conocía el código de cambio de canales.
+        </p>
+
+        <p>
+          El mensaje o la orden (en caso de control remoto) utilizaba un sistema
+          binario, modulando la frecuencia portadora con una señal de baja
+          frecuencia fija, de 100 o 500 Hz, lo que permitía añadir filtros
+          sintonizados a estas frecuencias en el receptor para eliminar las
+          señales parásitas mejorando la calidad de la recepción. Este
+          procedimiento se conoce ahora como “transmisión en espectro ensanchado
+          por salto de frecuencia”, en inglés Frequency Hopping Spread Spectrum
+          (FHSS). Las principales ventajas que presentan las señales de este
+          tipo de sistemas es que son altamente inmunes a ruidos e
+          interferencias y difíciles de reconocer e interceptar.
+        </p>
+
+        <p>
+          La patente interesó a los militares, pero suscitó diversas opiniones.
+          La marina de EEUU presumió problemas en su mecanismo, que no era
+          demasiado apto para ser colocado en un torpedo, concluyó que el
+          sistema era excesivamente vulnerable, inadecuado y engorroso y archivó
+          el proyecto. Lamarr y Antheil no insistieron, se olvidaron del tema y
+          volvieron a la cinematografía. Pero si bien la idea era difícil de
+          llevar a la práctica a principios de los años 1940, el enorme progreso
+          de la electrónica con la invención del transistor hizo factible su
+          utilización. En 1957, ingenieros de la empresa estadounidense Silvania
+          Electronics Systems Division desarrollaron el sistema patentado por
+          Hedy y George, que fue adoptado por el gobierno para las transmisiones
+          militares tres años después de caducar la patente. Aunque la actriz no
+          consiguió ingresar ni un solo centavo por la patente, que caducó sin
+          ser utilizada, no puede discutirse que fue la pionera en esta técnica.
+          Los honores y el reconocimiento, como veremos, tardaron en llegar.
+        </p>
+
+        <p>
+          Su historia acabó el 19 de enero de 2000 en Caselberry. Como última
+          voluntad pidió que parte de sus cenizas se esparcieran por los bosques
+          de Viena, cerca de su casa natal. La herencia, valorada en 3 millones
+          de dólares, fue repartida entre sus dos hijos menores, su secretaria
+          personal y un policía local que la acompañó y ayudó durante su última
+          etapa. Después de su muerte, su hijo cumplió con sus deseos. La mitad
+          de las cenizas cubrió los bosques vieneses mientras que la otra fue
+          entregada al consistorio vienés para que las enterrasen en un
+          memorial. Pero estos pidieron 10000 euros por la lápida, precio que el
+          hijo de Lamarr no podía costear. Finalmente, catorce años después de
+          su muerte, el pasado 7 de noviembre, recibió su merecido homenaje en
+          Viena.
+        </p>
+      </section>
+    </div>
+
+    <footer id="footer">
+      <div class="footer__social footer__section">
+        <h2>Mis redes</h2>
+        <div class="social__networks">
+          <div class="social__network">
+            <span class="social__icon-container"
+              ><i class="lni lni-github-original social__icon"></i
+            ></span>
+            <span class="social__icon-handler">
+              <a href="https://github.com/Thaili"> Thaili_Puga </a>
+            </span>
+          </div>
+
+          <div class="social__network">
+            <span class="social__icon-container"
+            ><i class="lni lni-instagram-original"></i>
+            </span>
+            <span class="social__icon-handler">
+              <a href="https://www.instagram.com/thai_navarro_/">
+                thai_navarro
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__contact-form footer__section">
+        <h2>Contacto</h2>
+        <div>
+          <form>
+            <label for="contactEmail"> Correo electronico:</label>
+            <input
+              id="contactEmail"
+              required
+              type="email"
+              placeholder="Ingresa tu correo electronico"
+            />
+
+            <label for="contactMessage"> Mensaje:</label>
+            <textarea id="contactMessage" required rows="4" cols="50">
+            </textarea>
+
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </div>
+      <div class="footer__more-sites footer__section">
+        <h2>Sitios de interés</h2>
+        <ul>
+          <li><a href="#">Página 1</a></li>
+          <li><a href="#">Página 2</a></li>
+          <li><a href="#">Página 3</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
