@@ -43,7 +43,7 @@ body {
 
 #navigation-bar li a.active {
     color: #fff;
-    background-color: #1ABC9C;
+    background-color: #17A589
 }
 
 #navigation-bar .menu__hamburger-icon {
@@ -184,7 +184,7 @@ input[type=email]:focus, textarea:focus {
 }
 
 input[type=submit] {
-    background:#117864;
+    background:#17A589;
     border: none;
     color: white;
     padding: 16px 32px;
