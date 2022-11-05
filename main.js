@@ -14,13 +14,6 @@ if (likesMusic === true) {
     likesMusicElement.textContent = 'no me gusta la musica';
 }
 
-const WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm'];
-const BLACK_KEYS = ['s', 'd', 'g', 'h', 'j'];
-
-const keys = document.querySelectorAll('.key');
-const whiteKeys = document.querySelectorAll('.key.white');
-const blackKeys = document.querySelectorAll('.key.black');
-
 function playNote(key) {
     // Obtener la nota
     const noteAudio = document.getElementById(key.dataset.note);
@@ -37,26 +30,27 @@ function playNote(key) {
       key.classList.remove('active');
     });
   }
-
-const playNote = (key) => {
-    const noteAudio = document.getElementById(key.dataset.note);
-    noteAudio.play();
-}
-
-document.addEventListener('keydown', (e) => { // z
+  
+  const WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm'];
+  const BLACK_KEYS = ['s', 'd', 'g', 'h', 'j'];
+  
+  const keys = document.querySelectorAll('.key');
+  const whiteKeys = document.querySelectorAll('.key.white');
+  const blackKeys = document.querySelectorAll('.key.black');
+  
+  keys.forEach((key) => {
+    key.addEventListener('click', () => playNote(key));
+  });
+  
+  document.addEventListener('keydown', (e) => {
     if (e.repeat) return;
-
     const key = e.key;
-    const whiteKeyIndex = WHITE_KEYS.indexOf(key);// 0
-    const blackKeyIndex = BLACK_KEYS.indexOf(key);//-1
+    const whiteKeyIndex = WHITE_KEYS.indexOf(key);
+    const blackKeyIndex = BLACK_KEYS.indexOf(key);
+    console.log(whiteKeys[whiteKeyIndex]);
+    if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex]);
+    if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex]);
+  });
 
-    if (whiteKeyIndex > -1) {
-        playNote(whiteKeys[whiteKeyIndex]); // whiteKeys[0]
-    }
-
-    if (blackKeyIndex > -1) {
-        playNote(blackKeys[blackKeyIndex]);
-    }
-});
 
 

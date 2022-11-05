@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #3e8de2;
+  background-color: #64F9DB;
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -30,7 +30,7 @@ body {
 }
 
 .white.active {
-  background-color: lawngreen;
+  background-color: #9069F0 ;
 }
 
 .black {
@@ -42,7 +42,7 @@ body {
 }
 
 .black.active {
-  background-color: #333;
+  background-color: #C0A7FC;
 }
 
 .text {
