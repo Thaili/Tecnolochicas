@@ -1,212 +1,50 @@
-html, body{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background-color: #E8F8F5;
-    color: black;
-    font-family: 'Montserrat', sans-serif;
+  background-color: #3e8de2;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.piano {
+  display: flex;
 }
 
-#navigation-bar ul {
-    margin: 0;
-    padding: 0;
-    border: 1px solid #1ABC9C;
-    background-color: #D1F2EB 
-     ;
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
 }
 
-#navigation-bar li {
-    display: inline-block;
+.white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid #333;
 }
 
-#navigation-bar li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.white.active {
+  background-color: lawngreen;
 }
 
-#navigation-bar li a:hover:not(.active) {
-    background-color: #F7F9F9;
+.black {
+  --width: 60px;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
 }
 
-#navigation-bar li a.active {
-    color: #fff;
-    background-color: #17A589
+.black.active {
+  background-color: #333;
 }
 
-#navigation-bar .menu__hamburger-icon {
-    display: none;
-}
-
-@media screen and (max-width: 600px) {
-    #navigation-bar li:not(:first-child) {
-        display: none;
-    }
-
-    #navigation-bar li.menu__hamburger-icon {
-        display: block;
-        float: right;
-    }
-
-    #navigation-bar.responsive {
-        position: relative;
-    }
-
-    #navigation-bar.responsive .menu__hamburger-icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    #navigation-bar.responsive .menu__hamburger-icon a {
-        color: #fff;
-    }
-
-    #navigation-bar.responsive li {
-        float: none;
-        display: block !important;
-    }
-
-    #navigation-bar.responsive li a {
-        text-align: left;
-    }
-}
-
-#main-content-container {
-    display: flex;
-}
-
-#links-sidebar {
-    flex: 2;
-    padding: 10px;
-}
-
-#links-sidebar ul {
-    padding: 0 0 0 10px;
-}
-
-#links-sidebar li {
-    list-style: none;
-}
-
-@media screen and (max-width: 600px) {
-    #links-sidebar {
-        display: none;
-    }
-}
-
-#main-content {
-    flex: 6;
-    padding: 10px 20% 10px 10px;
-}
-
-@media screen and (max-width: 600px) {
-    #main-content {
-        padding-right: 10px;
-    }
-
-}
-
-.main-content__img--full-width {
-    width: 100%;
-}
-
-#footer {
-    padding: 0 20px 20px 20px;
-    margin-top: auto;
-    display: flex;
-    background: #D1F2EB;
-}
-
-@media screen and (max-width: 600px) {
-    #footer {
-        flex-direction: column;
-    }
-
-    .footer__section {
-        border-bottom: 1px solid;
-        padding-bottom: 10px;
-
-    }
-
-}
-
-.footer__section {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.social__networks {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.social__network {
-    display: flex;
-    align-items: center;
-}
-
-.social__icon {
-    font-size: 32px;
-}
-
-.social__icon-handler {
-    margin-left: 10px;
-}
-
-input[type=email], textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #17A589 ;
-    transition: 0.5s;
-    outline: none;
-}
-
-input[type=email]:focus, textarea:focus {
-    border: 3px solid #76D7C4;
-}
-
-input[type=submit] {
-    background:#17A589;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.footer__more-sites ul {
-    padding: 0 0 0 10px;
-}
-
-.footer__more-sites li {
-    list-style: none;
+.text {
+  color: black;
 }
